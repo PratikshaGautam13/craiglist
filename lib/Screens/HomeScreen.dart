@@ -1,4 +1,5 @@
 import 'package:craiglist/Screens/CreatePost.dart';
+import 'package:craiglist/Screens/Favorites.dart';
 import 'package:craiglist/Screens/SearchScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -44,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.favorite,
                 size: 25,
               ),
-              label: "Favorites",
+              label: "Favourites",
             ),
             BottomNavigationBarItem(
               icon: Icon(
@@ -67,6 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget renderScreen() {
     if (currScreen == 0) return HomeScreenContainer();
+    if (currScreen == 1) return FavouritesScreen();
     if (currScreen == 2) return CreatePost();
     return Container(
       height: 300,
