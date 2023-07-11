@@ -151,78 +151,78 @@ class _ViewDetailsState extends State<ViewDetails>
                 SizedBox(
                   height: 5,
                 ),
+                // Container(
+                //   margin: EdgeInsets.only(left:20,right:30),
+                //   child: Text(
+                //       "Cars have nice uncut dashes. The 4 door has a very good frame under it but the 2 door car's frame is toast(rusted) but the body is pretty solid and restorable. I have a good front and rear glass for the 2 door and lots of stainless trim,head lights, tail lights,flippers etc.",
+                //       textAlign: TextAlign.justify,
+                //       style: TextStyle(color: Colors.black,fontSize: 12)),
+                // ),
+                // SizedBox(
+                //   height: 15,
+                // ),
+                // Container(
+                //   margin: EdgeInsets.only(left:20),
+                //   child: Row(
+                //     children: [
+                //       Icon(Icons.circle,color:Colors.black,size: 10,),
+                //       SizedBox(
+                //         width: 5,
+                //       ),
+                //       Container(
+                //         child: Text("Car neither runs or drives.",
+                //             style: TextStyle(color: Colors.black,fontSize: 12)),
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 5,
+                // ),
+                // Container(
+                //   margin: EdgeInsets.only(left:20),
+                //   child: Row(
+                //     children: [
+                //       Icon(Icons.circle,color:Colors.black,size: 10,),
+                //       SizedBox(
+                //         width: 5,
+                //       ),
+                //       Container(
+                //         child: Text("4 door has the original 265 V-8 with a Manual trans",
+                //             style: TextStyle(color: Colors.black,fontSize: 12)),
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 5,
+                // ),
+                // Container(
+                //   margin: EdgeInsets.only(left:20),
+                //   child: Row(
+                //     children: [
+                //       Icon(Icons.circle,color:Colors.black,size: 10,),
+                //       SizedBox(
+                //         width: 5,
+                //       ),
+                //       Container(
+                //         child: Text("4 door with good frames",
+                //             style: TextStyle(color: Colors.black,fontSize: 12)),
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                // SizedBox(
+                //   height: 10,
+                // ),
                 Container(
-                  margin: EdgeInsets.only(left:20,right:30),
-                  child: Text(
-                      "Cars have nice uncut dashes. The 4 door has a very good frame under it but the 2 door car's frame is toast(rusted) but the body is pretty solid and restorable. I have a good front and rear glass for the 2 door and lots of stainless trim,head lights, tail lights,flippers etc.",
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(color: Colors.black,fontSize: 12)),
+                  margin: EdgeInsets.only(left:20,right: 20),
+                  child: Text("I do not need this and want someone to take trash. May be this can go in recycling. Thanks",
+                      style: TextStyle(color: Colors.black,fontSize: 12,)),
                 ),
-                SizedBox(
-                  height: 15,
-                ),
-                Container(
-                  margin: EdgeInsets.only(left:20),
-                  child: Row(
-                    children: [
-                      Icon(Icons.circle,color:Colors.black,size: 10,),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Container(
-                        child: Text("Car neither runs or drives.",
-                            style: TextStyle(color: Colors.black,fontSize: 12)),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Container(
-                  margin: EdgeInsets.only(left:20),
-                  child: Row(
-                    children: [
-                      Icon(Icons.circle,color:Colors.black,size: 10,),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Container(
-                        child: Text("4 door has the original 265 V-8 with a Manual trans",
-                            style: TextStyle(color: Colors.black,fontSize: 12)),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Container(
-                  margin: EdgeInsets.only(left:20),
-                  child: Row(
-                    children: [
-                      Icon(Icons.circle,color:Colors.black,size: 10,),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Container(
-                        child: Text("4 door with good frames",
-                            style: TextStyle(color: Colors.black,fontSize: 12)),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  margin: EdgeInsets.only(left:20),
-                  child: Text("Call between 8am to 11pm Please",
-                      style: TextStyle(color: Color(0xFF9E32DD),fontSize: 12,fontWeight: FontWeight.bold)),
-                ),
-                SizedBox(
-                  height: 100,
-                )
+                // SizedBox(
+                //   height: 100,
+                // )
 
               ]))
         ],

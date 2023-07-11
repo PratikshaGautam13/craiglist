@@ -3,6 +3,7 @@ import 'package:craiglist/Screens/SearchScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../AppConstants.dart';
+import 'Profile.dart';
 import 'ViewDeatils.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -68,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget renderScreen() {
     if (currScreen == 0) return HomeScreenContainer();
     if (currScreen == 2) return CreatePost();
+    if (currScreen == 3) return Profile();
     return Container(
       height: 300,
       color: Colors.grey,
