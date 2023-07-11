@@ -1,3 +1,4 @@
+import 'package:craiglist/Screens/CreatePost.dart';
 import 'package:craiglist/Screens/SearchScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -65,6 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget renderScreen() {
     if (currScreen == 0) return HomeScreenContainer();
+    if (currScreen == 2) return CreatePost();
     return Container(
       height: 300,
       color: Colors.grey,
@@ -177,7 +179,7 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Bonita ,San Diego",
+                                "Bonita, San Diego",
                                 style: TextStyle(fontSize: 12),
                               ),
                               Text(
@@ -261,7 +263,7 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Bonita ,San Diego",
+                                "Bonita, San Diego",
                                 style: TextStyle(fontSize: 12),
                               ),
                               Text(
