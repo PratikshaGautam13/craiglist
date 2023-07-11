@@ -17,7 +17,7 @@ class _CreatePostState extends State<CreatePost> {
         child: Column(
           children: [
             Container(
-              height: 300,
+              height: 250,
               color: Colors.grey,
               child: Center(
                 child: Column(
@@ -33,7 +33,7 @@ class _CreatePostState extends State<CreatePost> {
                     ),
                     Text(
                       "(Tap to choose image)",
-                      style: TextStyle(fontSize: 14),
+                      style: TextStyle(fontSize: 12),
                     ),
                   ],
                 ),
