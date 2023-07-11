@@ -153,8 +153,8 @@ class _ViewDetailsState extends State<ViewDetails>
                 ),
                 Container(
                   margin: EdgeInsets.only(left:20,right:30),
-                  child: Text("I have 2 1956 Chevrolet Belairs both for one price. These are total PROJECT CARS. Obviously neither car runs or drives. READ the description before you ask a question."
-                      "Cars have nice uncut dashes.The 4 door still has the original 265 V-8 with a Manual trans set up. The 4 door has a very good frame under it but the 2 door car's frame is toast(rusted) but the body is pretty solid and restorable. I have a good front and rear glass for the 2 door and lots of stainless trim,head lights, tail lights,flippers ect.",
+                  child: Text(
+                      "Cars have nice uncut dashes. The 4 door has a very good frame under it but the 2 door car's frame is toast(rusted) but the body is pretty solid and restorable. I have a good front and rear glass for the 2 door and lots of stainless trim,head lights, tail lights,flippers etc.",
                       textAlign: TextAlign.justify,
                       style: TextStyle(color: Colors.black,fontSize: 12)),
                 ),
@@ -163,32 +163,62 @@ class _ViewDetailsState extends State<ViewDetails>
                 ),
                 Container(
                   margin: EdgeInsets.only(left:20),
-                  child: Text("Again neither car runs or drives.",
-                      style: TextStyle(color: Colors.black,fontSize: 12)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.circle,color:Colors.black,size: 10,),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Container(
+                        child: Text("Car neither runs or drives.",
+                            style: TextStyle(color: Colors.black,fontSize: 12)),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
-                  height: 2,
+                  height: 5,
                 ),
                 Container(
                   margin: EdgeInsets.only(left:20),
-                  child: Text("55 56 57 Camaro chevelle malibu",
-                      style: TextStyle(color: Colors.black,fontSize: 12)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.circle,color:Colors.black,size: 10,),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Container(
+                        child: Text("4 door has the original 265 V-8 with a Manual trans",
+                            style: TextStyle(color: Colors.black,fontSize: 12)),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
-                  height: 2,
+                  height: 5,
                 ),
                 Container(
                   margin: EdgeInsets.only(left:20),
-                  child: Text("3500.00 for both cars and all the parts I have for these. Cash ONLY and you come pick them up.",
-                      style: TextStyle(color: Colors.black,fontSize: 12)),
+                  child: Row(
+                    children: [
+                      Icon(Icons.circle,color:Colors.black,size: 10,),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Container(
+                        child: Text("4 door with good frames",
+                            style: TextStyle(color: Colors.black,fontSize: 12)),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
-                  height: 2,
+                  height: 10,
                 ),
                 Container(
                   margin: EdgeInsets.only(left:20),
-                  child: Text("Call between 8am thru 11pm Please",
-                      style: TextStyle(color: Colors.black,fontSize: 12,fontWeight: FontWeight.bold)),
+                  child: Text("Call between 8am to 11pm Please",
+                      style: TextStyle(color: Color(0xFF9E32DD),fontSize: 12,fontWeight: FontWeight.bold)),
                 ),
                 SizedBox(
                   height: 100,
