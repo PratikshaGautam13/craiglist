@@ -1,3 +1,4 @@
+import 'package:craiglist/Screens/SearchScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../AppConstants.dart';
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
           selectedItemColor: primaryClr,
@@ -79,6 +80,7 @@ class HomeScreenContainer extends StatefulWidget {
 }
 
 class _HomeScreenContainerState extends State<HomeScreenContainer> {
+  bool showFilter = false;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -107,13 +109,54 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                 width: 10,
               ),
               CircleAvatar(
-                  child: IconButton(onPressed: () {}, icon: Icon(Icons.tune))),
+                  child: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    SearchScreen(callback: (bool val) {
+                                      if (val) {
+                                        showFilter = true;
+                                        setState(() {});
+                                      }
+                                    })));
+                      },
+                      icon: Icon(Icons.tune))),
               SizedBox(
                 width: 10,
               ),
             ],
           ),
         )),
+        if (showFilter)
+          Row(
+            // runAlignment: WrapAlignment.start,
+            // alignment: WrapAlignment.start,
+            // crossAxisAlignment: WrapCrossAlignment.start,
+            // direction: Axis.horizontal,
+            // spacing: 10,
+            children: [
+              for (var i in ["Near by me", "Metal", "Glass"])
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 5),
+                  child: FilterChip(
+                    showCheckmark: false,
+                    selectedColor: primaryClr,
+                    labelStyle: TextStyle(color: Colors.white),
+                    selected: true,
+                    disabledColor: Colors.grey.withOpacity(.5),
+                    label: Text(
+                      "$i",
+                    ),
+                    onSelected: (bool value) {
+                      // filterMaterial[i] = value;
+                      setState(() {});
+                    },
+                  ),
+                ),
+            ],
+          ),
         Expanded(
           child: ListView(
             padding: EdgeInsets.symmetric(vertical: 0),
@@ -163,12 +206,22 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Wrap(
+                          alignment: WrapAlignment.end,
                           children: [
                             IconButton(
                                 onPressed: () {},
                                 icon: Icon(Icons.favorite_outline_rounded)),
-                            IconButton(
-                                onPressed: () {}, icon: Icon(Icons.reply)),
+                            TextButton.icon(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.reply,
+                                color: Colors.black,
+                              ),
+                              label: Text(
+                                "Share",
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
                           ],
                         ),
                         Container(
