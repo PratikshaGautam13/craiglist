@@ -2,6 +2,7 @@ import 'package:craiglist/Screens/SearchScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../AppConstants.dart';
+import 'ViewDeatils.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -231,7 +232,10 @@ class _HomeScreenContainerState extends State<HomeScreenContainer> {
                           height: 40,
                           margin: EdgeInsets.only(right: 10),
                           child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => ViewDetails()));
+                              },
                               child: Text(
                                 "View Details",
                                 style: TextStyle(

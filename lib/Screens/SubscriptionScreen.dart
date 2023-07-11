@@ -15,7 +15,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          appBar(context, "Select Subscription"),
+          // appBar(context, "Select Subscription"),
           Expanded(
             child: ListView(
               children: [

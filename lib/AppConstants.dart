@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 int primaryClrCode = 0xFF9E32DD;
 Color primaryClr = Color(0xFF9E32DD);
 
-Widget appBar(BuildContext context, String title) {
+Widget AppBarContainer(BuildContext context, String title) {
   return Container(
     height: 150,
     decoration: BoxDecoration(
