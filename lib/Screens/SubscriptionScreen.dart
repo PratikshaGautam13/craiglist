@@ -1,4 +1,5 @@
 import 'package:craiglist/AppConstants.dart';
+import 'package:craiglist/Screens/Location.dart';
 import 'package:flutter/material.dart';
 
 class SubscriptionScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          // appBar(context, "Select Subscription"),
+          AppBarContainer(context, "Select Subscription"),
           Expanded(
             child: ListView(
               padding: EdgeInsets.symmetric(vertical: 0),
@@ -111,7 +112,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                               style: ElevatedButton.styleFrom(
                                   elevation: 0,
                                   backgroundColor: Colors.transparent),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => Location()));
+                              },
                               child: Text("Purchase")))
                     ],
                   ),

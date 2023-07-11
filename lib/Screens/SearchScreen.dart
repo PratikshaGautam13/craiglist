@@ -169,7 +169,9 @@ class _SearchScreenState extends State<SearchScreen> {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             elevation: 0, backgroundColor: Colors.transparent),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         child: Text("Search"))),
                 SizedBox(
                   width: 20,
