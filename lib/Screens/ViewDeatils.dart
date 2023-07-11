@@ -116,7 +116,7 @@ class _ViewDetailsState extends State<ViewDetails>
                                   Color(0xFFC83DEC),
                                 ])
                             ),
-                            child: Text("More Image",style: TextStyle(color: Colors.white,fontSize: 10,fontWeight: FontWeight.bold))
+                            child: Text("More Images",style: TextStyle(color: Colors.white,fontSize: 10,fontWeight: FontWeight.bold))
                         ),
                       ),
 
