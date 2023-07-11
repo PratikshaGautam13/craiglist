@@ -9,6 +9,7 @@ class SubscriptionScreen extends StatefulWidget {
 }
 
 class _SubscriptionScreenState extends State<SubscriptionScreen> {
+  List<String> planDetails = ["Ideal to Discover location", "Additional Perks"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,9 +19,9 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           // appBar(context, "Select Subscription"),
           Expanded(
             child: ListView(
+              padding: EdgeInsets.symmetric(vertical: 0),
               children: [
                 Container(
-                  // height: 300,
                   margin: EdgeInsets.symmetric(horizontal: 20),
                   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                   decoration: BoxDecoration(
@@ -36,41 +37,63 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                   child: Column(
                     children: [
                       Text(
-                        "Basic",
+                        "Pro",
                         style: TextStyle(
                             fontSize: 22, fontWeight: FontWeight.w600),
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      for (var i = 0; i < 1; i++)
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 5),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: primaryClr.withOpacity(.05),
-                                radius: 15,
-                                child: Icon(
-                                  Icons.check,
-                                  color: primaryClr,
+                      Container(
+                        padding: EdgeInsets.only(left: 20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            //
+                            //   ],
+                            // ),
+                            for (var i in planDetails)
+                              Container(
+                                margin: EdgeInsets.symmetric(vertical: 5),
+                                child: Row(
+                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CircleAvatar(
+                                      backgroundColor:
+                                          primaryClr.withOpacity(.05),
+                                      radius: 15,
+                                      child: Icon(
+                                        Icons.check,
+                                        color: primaryClr,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text("$i")
+                                  ],
                                 ),
                               ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text("Ideal to Discover location")
-                            ],
-                          ),
+                          ],
                         ),
+                      ),
                       SizedBox(
                         height: 20,
                       ),
-                      Text(
-                        "\$10",
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w700),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "\$10 ",
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.w700),
+                          ),
+                          Text(
+                            "per month",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.w500),
+                          ),
+                        ],
                       ),
                       SizedBox(
                         height: 20,
@@ -92,7 +115,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                               child: Text("Purchase")))
                     ],
                   ),
-                )
+                ),
               ],
             ),
           )
