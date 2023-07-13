@@ -2,7 +2,7 @@
     package="com.example.craiglist">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Craiglist"
+        android:label="GC"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

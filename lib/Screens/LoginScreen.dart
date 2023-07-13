@@ -28,7 +28,7 @@ class _LoginState extends State<Login> {
                   Container(
                     margin: EdgeInsets.only(left: 20, top: 20),
                     child: Text(
-                      "Welcome to Craiglist ",
+                      "Welcome to GC",
                       style: GoogleFonts.anekDevanagari(
                           fontSize: 25,
                           color: Color(0xFF8A2FAD),
